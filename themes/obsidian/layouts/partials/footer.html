@@ -1,0 +1,28 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="/" class="logo">
+          <svg class="logo__mark" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.2"/>
+          </svg>
+          <span class="logo__text">PLIRIS</span>
+        </a>
+        <p class="footer__sub">Public Sector. Data. Results.</p>
+      </div>
+      <nav class="footer__nav">
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+      <div class="footer__contact">
+        {{ with .Site.Params.email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+        {{ with .Site.Params.phone }}<a href="tel:{{ . }}">{{ . }}</a>{{ end }}
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; {{ .Site.Params.year }} Pliris Consulting</span>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js"></script>

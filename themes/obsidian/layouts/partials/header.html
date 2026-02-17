@@ -1,0 +1,28 @@
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="/" class="logo">
+      <svg class="logo__mark" viewBox="0 0 28 28" fill="none">
+        <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="14" y1="0" x2="14" y2="7" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="14" y1="21" x2="14" y2="28" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="0" y1="14" x2="7" y2="14" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="21" y1="14" x2="28" y2="14" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <span class="logo__text">PLIRIS</span>
+    </a>
+    <nav class="nav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="nav__link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+    <div class="header__right">
+      <a href="/contact/" class="btn btn--outline btn--sm">Let's Talk</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="mobile-menu__link">{{ .Name }}</a>
+    {{ end }}
+  </div>
+</header>

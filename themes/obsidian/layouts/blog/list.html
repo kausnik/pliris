@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-eyebrow"><span class="mono">// Blog</span></div>
+      <h1 class="page-title">Insights & Perspectives</h1>
+      <p class="page-subtitle">Thoughts on public sector technology, digital transformation, and building systems that serve communities.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blog-list">
+  <div class="container">
+    <div class="blog-posts">
+      {{ $paginator := .Paginate .Pages }}
+      {{ range $paginator.Pages }}
+        <a href="{{ .Permalink }}" class="blog-post">
+          <span class="blog-post__date">{{ .Date.Format "January 2, 2006" }}</span>
+          <h2 class="blog-post__title">{{ .Title }}</h2>
+          <p class="blog-post__summary">{{ .Summary }}</p>
+        </a>
+      {{ end }}
+    </div>
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</section>
+
+{{ end }}

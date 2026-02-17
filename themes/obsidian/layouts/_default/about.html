@@ -1,0 +1,136 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-eyebrow"><span class="mono">// About</span></div>
+      <h1 class="page-title">{{ .Title }}</h1>
+      <p class="page-subtitle">{{ .Params.subtitle }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="about-content">
+  <div class="container">
+    <div class="about__grid">
+      <div>
+        <div class="section-eyebrow"><span class="mono">// Our Story</span></div>
+        <h2 class="section-title">Built for Government</h2>
+        <div class="about__body">
+          {{ .Content }}
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;">
+          <a href="/services/" class="btn btn--primary">Our Services</a>
+          <a href="/contact/" class="btn btn--outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="about__diagram" data-reveal>
+        <svg class="diagram__svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer ring -->
+          <circle cx="200" cy="200" r="180" stroke="rgba(0,212,200,0.12)" stroke-width="1"/>
+          <!-- Mid ring -->
+          <circle cx="200" cy="200" r="130" stroke="rgba(0,212,200,0.1)" stroke-width="1"/>
+          <!-- Inner ring -->
+          <circle cx="200" cy="200" r="80" stroke="rgba(0,212,200,0.2)" stroke-width="1"/>
+          <!-- Center -->
+          <rect x="176" y="176" width="48" height="48" rx="8" fill="#0C1220" stroke="#00D4C8" stroke-width="1"/>
+          <text x="200" y="205" text-anchor="middle" font-family="'DM Mono',monospace" font-size="18" fill="#00D4C8">P</text>
+          <!-- Connection lines -->
+          <line x1="200" y1="20" x2="200" y2="176" stroke="rgba(0,212,200,0.08)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="356" y1="110" x2="224" y2="180" stroke="rgba(0,212,200,0.08)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="356" y1="290" x2="224" y2="220" stroke="rgba(0,212,200,0.08)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="200" y1="380" x2="200" y2="224" stroke="rgba(0,212,200,0.08)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="44" y1="290" x2="176" y2="220" stroke="rgba(0,212,200,0.08)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="44" y1="110" x2="176" y2="180" stroke="rgba(0,212,200,0.08)" stroke-width="1" stroke-dasharray="4 4"/>
+          <!-- Nodes (positioned around the outer ring) -->
+          <!-- BA - top -->
+          <circle cx="200" cy="20" r="24" fill="#0C1220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <text x="200" y="24" text-anchor="middle" font-family="'DM Mono',monospace" font-size="10" fill="#9FB8C8">BA</text>
+          <!-- BI - top right -->
+          <circle cx="356" cy="110" r="24" fill="#0C1220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <text x="356" y="114" text-anchor="middle" font-family="'DM Mono',monospace" font-size="10" fill="#9FB8C8">BI</text>
+          <!-- DT - bottom right -->
+          <circle cx="356" cy="290" r="24" fill="#0C1220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <text x="356" y="294" text-anchor="middle" font-family="'DM Mono',monospace" font-size="10" fill="#9FB8C8">DT</text>
+          <!-- DG - bottom -->
+          <circle cx="200" cy="380" r="24" fill="#0C1220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <text x="200" y="384" text-anchor="middle" font-family="'DM Mono',monospace" font-size="10" fill="#9FB8C8">DG</text>
+          <!-- PM - bottom left -->
+          <circle cx="44" cy="290" r="24" fill="#0C1220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <text x="44" y="294" text-anchor="middle" font-family="'DM Mono',monospace" font-size="10" fill="#9FB8C8">PM</text>
+          <!-- MS - top left -->
+          <circle cx="44" cy="110" r="24" fill="#0C1220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <text x="44" y="114" text-anchor="middle" font-family="'DM Mono',monospace" font-size="10" fill="#9FB8C8">MS</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Nikhil Kaushal Profile & Certifications -->
+<section class="certifications">
+  <div class="container">
+    <header class="section-head">
+      <div class="section-eyebrow"><span class="mono">// Principal</span></div>
+      <h2 class="section-title">Nikhil Kaushal</h2>
+      <p class="section-sub">CBAP &middot; MBA in Strategy, University of Saskatchewan</p>
+    </header>
+
+    <div class="cert__grid">
+      <div class="cert-card" data-reveal>
+        <span class="cert-card__icon">CBAP</span>
+        <h4 class="cert-card__title">Certified Business Analysis Professional</h4>
+        <p class="cert-card__org">IIBA, 2018</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <span class="cert-card__icon">SAFe</span>
+        <h4 class="cert-card__title">Certified SAFe 6 Agile Product Manager</h4>
+        <p class="cert-card__org">Scaled Agile, 2022</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <span class="cert-card__icon">PL-200</span>
+        <h4 class="cert-card__title">Power Platform Functional Consultant</h4>
+        <p class="cert-card__org">Microsoft, 2023</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <span class="cert-card__icon">DP-100</span>
+        <h4 class="cert-card__title">Azure Data Scientist Associate</h4>
+        <p class="cert-card__org">Microsoft, 2021</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <span class="cert-card__icon">MCSA</span>
+        <h4 class="cert-card__title">BI Reporting</h4>
+        <p class="cert-card__org">Microsoft, 2019</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <span class="cert-card__icon">PROSCI</span>
+        <h4 class="cert-card__title">Change Management &mdash; ADKAR</h4>
+        <p class="cert-card__org">PROSCI, 2014</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <span class="cert-card__icon">6&sigma;</span>
+        <h4 class="cert-card__title">Certified Six Sigma Green Belt</h4>
+        <p class="cert-card__org">ASQ, 2011</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <span class="cert-card__icon">AZ-900</span>
+        <h4 class="cert-card__title">Azure Fundamentals</h4>
+        <p class="cert-card__org">Microsoft, 2019</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <div class="section-eyebrow"><span class="mono">// Ready?</span></div>
+      <h2 class="cta-title">Let's Work Together</h2>
+      <p class="cta-text">Whether you're facing a complex compliance challenge, planning a digital transformation, or need a trusted advisor who understands how government actually operates.</p>
+      <div class="cta-actions">
+        <a href="/contact/" class="btn btn--primary">Start a Conversation</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

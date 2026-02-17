@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-eyebrow"><span class="mono">// Services</span></div>
+      <h1 class="page-title">What We Do</h1>
+      <p class="page-subtitle">Six focused practices — rooted in public sector reality.</p>
+    </div>
+  </div>
+</section>
+
+{{ partial "services-grid.html" . }}
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <div class="section-eyebrow"><span class="mono">// Get Started</span></div>
+      <h2 class="cta-title">Let's Build Something That Lasts</h2>
+      <p class="cta-text">We partner with public sector organizations to deliver technology projects that create lasting impact and measurable results.</p>
+      <div class="cta-actions">
+        <a href="/contact/" class="btn btn--primary">Start a Conversation</a>
+        <a href="/about/" class="btn btn--outline">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

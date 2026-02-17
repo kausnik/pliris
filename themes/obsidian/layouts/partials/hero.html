@@ -1,0 +1,35 @@
+<section class="hero">
+  <canvas class="hero__canvas" id="heroCanvas"></canvas>
+  <div class="hero__noise"></div>
+  <div class="hero__content container">
+    <div class="hero__kicker">
+      <span class="kicker__dot"></span>
+      <span class="mono">Public Sector. Data. Results.</span>
+    </div>
+    <h1 class="hero__title">{{ .Site.Params.heroTitle }}</h1>
+    <p class="hero__sub">{{ .Site.Params.heroSub }}</p>
+    <div class="hero__actions">
+      <a href="/contact/" class="btn btn--primary">Start a Conversation</a>
+      <a href="/services/" class="btn btn--ghost"><span>Our Services</span></a>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <div class="scroll-track"><div class="scroll-thumb"></div></div>
+  </div>
+  <div class="hero__stats">
+    <div class="hero__stat">
+      <span class="hero__stat-n">{{ .Site.Params.heroStatYears }}</span>
+      <span class="hero__stat-l mono">{{ .Site.Params.heroStatYearsLabel }}</span>
+    </div>
+    <div class="hero__stat-div"></div>
+    <div class="hero__stat">
+      <span class="hero__stat-n">{{ .Site.Params.heroStatRegion }}</span>
+      <span class="hero__stat-l mono">{{ .Site.Params.heroStatRegionLabel }}</span>
+    </div>
+    <div class="hero__stat-div"></div>
+    <div class="hero__stat">
+      <span class="hero__stat-n">{{ .Site.Params.heroStatCert }}</span>
+      <span class="hero__stat-l mono">{{ .Site.Params.heroStatCertLabel }}</span>
+    </div>
+  </div>
+</section>

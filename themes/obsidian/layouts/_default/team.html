@@ -1,0 +1,102 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-eyebrow"><span class="mono">// Team</span></div>
+      <h1 class="page-title">{{ .Title }}</h1>
+      <p class="page-subtitle">{{ .Params.subtitle }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="team-content">
+  <div class="container">
+    <div class="team__featured-grid">
+      <div class="teammate teammate--featured-solo" style="--hue:180" data-reveal>
+        <div class="teammate__avatar">
+          <div class="avatar__ring"></div>
+          <span class="avatar__initials mono">NK</span>
+        </div>
+        <div class="teammate__info">
+          <h3 class="teammate__name">Nikhil Kaushal</h3>
+          <div class="teammate__title mono">Principal Consultant, CBAP</div>
+          <div class="teammate__exp">Public Sector Digital Transformation & Business Intelligence</div>
+          <p class="teammate__bio">Certified Business Analysis Professional with an MBA from University of Saskatchewan and 15+ years transforming public sector organizations across BC and Saskatchewan. Specialized in bridging the gap between policy intent and technology execution — working with provincial governments, crown corporations, and municipal agencies to deliver solutions that respect the unique constraints of government operations.</p>
+        </div>
+      </div>
+
+      {{ partial "clients.html" . }}
+    </div>
+
+    <!-- Core Competencies -->
+    <div class="competencies-section">
+      <div class="section-eyebrow"><span class="mono">// Core Competencies</span></div>
+      <h2 class="section-title">Areas of Expertise</h2>
+      <div class="competencies__grid">
+        <div class="comp-category" data-reveal>
+          <h4 class="comp-category__title mono">Business & Strategy</h4>
+          <ul class="comp-list">
+            <li>Business Analysis (CBAP)</li>
+            <li>Digital Transformation</li>
+            <li>Change Management (PROSCI)</li>
+            <li>Process Engineering</li>
+            <li>Workshop Facilitation</li>
+          </ul>
+        </div>
+        <div class="comp-category" data-reveal>
+          <h4 class="comp-category__title mono">Data & Analytics</h4>
+          <ul class="comp-list">
+            <li>Business Intelligence</li>
+            <li>Data Governance</li>
+            <li>Power BI</li>
+            <li>Azure Data Science</li>
+            <li>SAP BW</li>
+          </ul>
+        </div>
+        <div class="comp-category" data-reveal>
+          <h4 class="comp-category__title mono">Platform & Tools</h4>
+          <ul class="comp-list">
+            <li>Microsoft 365 / SharePoint</li>
+            <li>Power Platform</li>
+            <li>Azure (AI/ML, DevOps)</li>
+            <li>ServiceNow ITSM</li>
+            <li>Agile / SAFe</li>
+          </ul>
+        </div>
+        <div class="comp-category" data-reveal>
+          <h4 class="comp-category__title mono">Public Sector</h4>
+          <ul class="comp-list">
+            <li>Privacy & Compliance</li>
+            <li>Privacy Impact Assessments</li>
+            <li>Records Management</li>
+            <li>Procurement & RFP</li>
+            <li>Treasury Board Reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Industries -->
+    <div class="industries-section">
+      <div class="section-eyebrow"><span class="mono">// Sectors Served</span></div>
+      <h2 class="section-title">Industry Experience</h2>
+      <p style="margin-bottom:32px;color:var(--ice-dim);">15+ years across public sector, utilities, insurance, and telecommunications.</p>
+      <div class="industries__grid">
+        <span class="industry-tag">Provincial Government (BC, SK)</span>
+        <span class="industry-tag">Municipal Government</span>
+        <span class="industry-tag">Crown Corporations</span>
+        <span class="industry-tag">Utilities (Energy, Gas)</span>
+        <span class="industry-tag">P&C Insurance</span>
+        <span class="industry-tag">Life Insurance</span>
+        <span class="industry-tag">Telecommunications</span>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="team-cta" data-reveal>
+      <p>Ready to tackle a complex public sector challenge?</p>
+      <a href="/contact/" class="btn btn--primary">Let's Talk</a>
+    </div>
+  </div>
+</section>
+{{ end }}

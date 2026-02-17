@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-eyebrow"><span class="mono">// Services</span></div>
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ with .Params.subtitle }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="blog-content">
+  <div class="container">
+    <div class="blog-article">
+      {{ .Content }}
+    </div>
+    <div style="margin-top:40px;">
+      <a href="/services/" class="btn btn--ghost">&larr; Back to Services</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

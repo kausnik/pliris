@@ -1,0 +1,83 @@
+baseURL = "https://pliris.ca/"
+languageCode = "en-ca"
+title = "Pliris Consulting — Public Sector Technology Consulting"
+theme = "obsidian"
+[pagination]
+  pagerSize = 6
+summaryLength = 40
+
+[params]
+  tagline = "Public Sector. Data. Results."
+  description = "Pliris partners with Canadian provincial governments to turn complex policy challenges into elegant digital solutions."
+  author = "Nikhil Kaushal"
+  email = "info@pliris.ca"
+  phone = "+1 (306) 351-2555"
+  location = "Victoria, BC, Canada"
+  year = "2026"
+
+  heroTitle = "Transforming Public Sector Through Technology"
+  heroSub = "Pliris partners with Canadian provincial governments to turn complex policy challenges into elegant digital solutions — building systems that serve citizens better while respecting the unique constraints of government operations."
+  heroStatYears = "15+"
+  heroStatYearsLabel = "Years Experience"
+  heroStatRegion = "BC + SK"
+  heroStatRegionLabel = "Provincial Focus"
+  heroStatCert = "CBAP"
+  heroStatCertLabel = "Certified Professional"
+
+  [[params.clients]]
+    name = "SGI Canada"
+  [[params.clients]]
+    name = "BC Hydro"
+  [[params.clients]]
+    name = "BC Pensions Corporation"
+  [[params.clients]]
+    name = "District of Saanich"
+  [[params.clients]]
+    name = "SaskEnergy"
+  [[params.clients]]
+    name = "SaskPower"
+  [[params.clients]]
+    name = "Co-operators"
+  [[params.clients]]
+    name = "Canada Life"
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menus.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 2
+  [[menus.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menus.main]]
+    name = "Team"
+    url = "/team/"
+    weight = 4
+  [[menus.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 5
+  [[menus.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "dracula"
+    lineNos = false
+
+[outputs]
+  home = ["HTML"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

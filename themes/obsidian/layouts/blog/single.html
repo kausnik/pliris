@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-eyebrow"><span class="mono">{{ .Date.Format "January 2, 2006" }}</span></div>
+      <h1 class="page-title">{{ .Title }}</h1>
+      <p class="page-subtitle">{{ with .Params.subtitle }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="blog-content">
+  <div class="container">
+    <div class="blog-article">
+      {{ .Content }}
+    </div>
+    <div style="margin-top:40px;">
+      <a href="/blog/" class="btn btn--ghost">&larr; Back to Blog</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

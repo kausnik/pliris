@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-eyebrow"><span class="mono">// Contact</span></div>
+      <h1 class="page-title">{{ .Title }}</h1>
+      <p class="page-subtitle">{{ .Params.subtitle }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-content">
+  <div class="container">
+    <div style="max-width:600px;">
+      <p class="contact__intro">Whether you're facing a privacy compliance challenge, need to modernize a legacy system, or want a second opinion on a vendor proposal — Pliris is here to help.</p>
+      <div class="contact__meta">
+        <div class="contact__item">
+          <span class="mono contact__label">EMAIL</span>
+          <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+        </div>
+        <div class="contact__item">
+          <span class="mono contact__label">PHONE</span>
+          <a href="tel:+13063512555">{{ .Site.Params.phone }}</a>
+        </div>
+        <div class="contact__item">
+          <span class="mono contact__label">LOCATION</span>
+          <span>{{ .Site.Params.location }}</span>
+        </div>
+      </div>
+      <div class="contact__availability" style="margin-top:40px;">
+        <div class="section-eyebrow"><span class="mono">// Availability</span></div>
+        <h3 class="section-title" style="font-size:1.4rem;">Current Availability</h3>
+        <p style="color:var(--ice-dim);line-height:1.75;margin-top:12px;">Pliris is currently accepting new engagements for Q2 2026. We work with provincial governments, crown corporations, and municipal agencies across British Columbia and Saskatchewan.</p>
+      </div>
+      <div style="margin-top:40px;">
+        <a href="mailto:{{ .Site.Params.email }}" class="btn btn--primary">Send an Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
