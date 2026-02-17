@@ -1213,23 +1213,23 @@ p{color:var(--ice-dim)}
   background:var(--void-2);
   border:1px solid var(--border-s);
   border-radius:var(--r2);
-  aspect-ratio:3/2;
-  padding:16px;
+  padding:18px 16px;
   transition:all .35s var(--ease);
 }
-.client-logo svg{
-  filter:grayscale(0%);opacity:.7;
+.client-logo__name{
+  font-family:var(--mono);font-size:.75rem;
+  font-weight:500;letter-spacing:.04em;
+  color:var(--ice);opacity:.7;
+  text-align:center;
   transition:all .35s var(--ease);
-  color:var(--ice);
 }
 .client-logo:hover{
   border-color:var(--cyan);
   transform:translateY(-4px);
   box-shadow:0 4px 20px var(--cyan-glow);
 }
-.client-logo:hover svg{
-  color:var(--cyan);
-  filter:grayscale(0%);opacity:1;
+.client-logo:hover .client-logo__name{
+  color:var(--cyan);opacity:1;
 }
 
 /* ---------- Footer ---------- */

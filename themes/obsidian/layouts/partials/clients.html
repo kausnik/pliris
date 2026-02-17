@@ -3,9 +3,7 @@
   <div class="client-logos__grid">
     {{ range .Site.Params.clients }}
       <div class="client-logo">
-        <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-          <text x="100" y="35" text-anchor="middle" dominant-baseline="central" fill="currentColor" font-family="Arial, sans-serif" font-size="16" font-weight="700">{{ .name }}</text>
-        </svg>
+        <span class="client-logo__name">{{ .name }}</span>
       </div>
     {{ end }}
   </div>
