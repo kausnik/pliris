@@ -1218,9 +1218,9 @@ p{color:var(--ice-dim)}
   transition:all .35s var(--ease);
 }
 .client-logo svg{
-  filter:grayscale(100%);opacity:.4;
+  filter:grayscale(0%);opacity:.7;
   transition:all .35s var(--ease);
-  color:var(--ice-dim);
+  color:var(--ice);
 }
 .client-logo:hover{
   border-color:var(--cyan);
