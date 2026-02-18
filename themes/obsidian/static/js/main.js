@@ -11,21 +11,10 @@
      ========================================================== */
   const cursor = document.getElementById('cursor');
   if (cursor) {
-    let cx = 0, cy = 0;   // current
-    let tx = 0, ty = 0;   // target
-
     document.addEventListener('mousemove', function (e) {
-      tx = e.clientX;
-      ty = e.clientY;
-    });
-
-    (function animateCursor() {
-      cx += (tx - cx) * 0.15;
-      cy += (ty - cy) * 0.15;
       cursor.style.transform =
-        'translate3d(' + cx + 'px,' + cy + 'px,0) translate(-50%,-50%)';
-      requestAnimationFrame(animateCursor);
-    })();
+        'translate3d(' + e.clientX + 'px,' + e.clientY + 'px,0) translate(-50%,-50%)';
+    });
 
     // Expand on interactive elements
     var interactiveSelector =
